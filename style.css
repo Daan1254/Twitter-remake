@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'default';
+    src: url(./fonts/SF-UI-Display-Regular.otf);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+
+.nav-bar {
+    position: absolute;
+    height: 100%;
+    width: 16%;
+    left: 8%;
+    border-right: 1px solid #2f3336;
+}
+
+.nav-img {
+    width: 40px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.nav-item  {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: safe;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.nav-item:hover  {
+    background-color: #181818;
+    transition: all 0.3s;
+}
+
+
+
+.nav-item > i {
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+.nav-content {
+    font-size: 29px;
+    font-family: 'default';
+    margin-left: 10px;
+    padding-right: 30px;
+}
+
+.nav-bar > button {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 36px;
+    width: 90%;
+    border-radius: 10px;
+    background-color: #1d9bf0;
+    border: none;
+    font-family: 'default';
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+}
+
+.user-profile {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.user-profile-picture {
+    display: flex;
+
+
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.user-profile-tag {
+    font-family: 'default';
+    color: white;
+    margin-left: 10px;
+}
