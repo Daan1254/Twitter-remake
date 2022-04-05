@@ -20,7 +20,7 @@
 .nav-bar {
     position: absolute;
     height: 100%;
-    width: 16%;
+    width: max-content;
     left: 8%;
     border-right: 1px solid #2f3336;
 }
@@ -101,4 +101,82 @@
     font-family: 'default';
     color: white;
     margin-left: 10px;
+}
+
+.user-profile-dots {    
+    position: absolute;
+    color: white;
+}
+
+.mid-screen {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 25.5%;
+    border-right: 1px solid #2f3336;
+}
+.mid-header {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.mid-header-title {
+    font-family: 'default';
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    left: 5%;
+}
+
+
+.mid-header-icon {
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    color: white;
+}
+
+.mid-tweet-grid {
+    width: 100%;
+    height: 85%;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.mid-tweet-template {
+    border: 1px solid #2f3336;
+    height: max-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.mid-tweet-template-input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #2f3336;
+    margin: 10px;
+    width: 80%;
+    height: 100px;
+    text-align: top;
+    color: white;
+    text-align: justify;
+    font-family: 'default';
+    font-size: 20px;
+    resize: none;
+}
+
+.mid-tweet-template-input::placeholder {
+    font-size: 20px;
+    position: absolute;
+    font-family: 'default';
+}
+
+
+.mid-profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    
 }
