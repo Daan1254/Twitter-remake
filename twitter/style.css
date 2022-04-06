@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+
+@font-face {
+    font-family: 'default';
+    src: url(./fonts/SF-UI-Display-Regular.otf);
+}
+
+
+:root {
+    --twitterBackground: #1d9bf0;
+}
+
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+
+.nav-bar {
+    position: absolute;
+    height: 100%;
+    width: max-content;
+    left: 8%;
+    border-right: 1px solid #2f3336;
+}
+
+.nav-img {
+    width: 40px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.nav-item  {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: safe;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.nav-item:hover  {
+    background-color: #181818;
+    transition: all 0.3s;
+}
+
+
+
+.nav-item > i {
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+.nav-content {
+    font-size: 29px;
+    font-family: 'default';
+    margin-left: 10px;
+    padding-right: 30px;
+}
+
+.nav-bar > button {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 36px;
+    width: 90%;
+    border-radius: 10px;
+    background-color: #1d9bf0;
+    border: none;
+    font-family: 'default';
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+}
+
+.user-profile {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.user-profile-picture {
+    display: flex;
+
+
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.user-profile-tag {
+    font-family: 'default';
+    color: white;
+    margin-left: 10px;
+}
+
+.user-profile-dots {    
+    position: absolute;
+    color: white;
+}
+
+.mid-screen {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 25.5%;
+    border-right: 1px solid #2f3336;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.mid-screen::-webkit-scrollbar {
+    display: none;
+}
+.mid-header {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.mid-header-title {
+    font-family: 'default';
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    left: 5%;
+}
+
+
+.mid-header-icon {
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    color: white;
+}
+
+.mid-tweet-grid {
+    width: 100%;
+    height: max-content;
+    margin-top: 5%;
+    display: grid;
+    row-gap: 0;
+}
+
+.mid-tweet-template {
+    position: relative;
+    border: 1px solid #2f3336;
+    height: max-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.mid-tweet-template-input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #2f3336;
+    margin: 10px;
+    width: 90%;
+    height: 100px;
+    text-align: top;
+    color: white;
+    text-align: justify;
+    font-family: 'default';
+    font-size: 20px;
+    resize: none;
+    outline: none;
+}
+
+.mid-tweet-template-input::placeholder {
+    font-size: 20px;
+    position: absolute;
+    font-family: 'default';
+}
+
+
+.mid-profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+
+.mid-tweet-template-actions {
+    left: 50px;
+    padding: 10px;
+}
+
+.mid-tweet-template-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.mid-tweet-template-action {
+    color: var(--twitterBackground);
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.mid-tweet-template-action:hover {
+    background-color: #43494d;
+    opacity: .8;
+    transition: .2s all ease-in-out;
+}
+
+.mid-tweet-template-tweetbtn {
+    position: absolute;
+    right: 5%;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--twitterBackground);
+    color: white;
+    font-family: 'default';
+    font-weight: bold;
+}
+
+.mid-tweet-template-tweetbtn:hover {
+    background-color: #1a8cd8;
+    transition: all .5s ease-in-out;
+}
+
+.mid-tweet {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: max-content;
+    padding: 10px;
+    border: 1px solid #43494d;
+}
+
+
+.mid-tweet-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+}
+
+.mid-tweet-header {
+    color: white;
+    font-family: 'default';
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.mid-tweet-verified {
+    width: 15px;
+    height: 15px;
+    text-align: center;
+}
+
+.mid-tweet-smalltext {
+    font-size: 13px;
+    color: #777;
+    opacity: .7;
+    margin-left: 20px;
+}
+
+.mid-tweet-content {
+    color: white;
+    padding: 10px 0px;
+    font-family: 'default';
+    width: 80%;
+}
+
+.mid-tweet-actions {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.mid-tweet-action {
+    color: #606468;
+}
+
+
+.mid-tweet-action {
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+.mid-tweet-action:nth-child(1):hover{
+    color: #1d99ed;
+    opacity: .7;
+    background-color: #43494d;
+    transition: .3s all ease-in-out;
+}
+
+.mid-tweet-action:nth-child(2):hover{
+    color: #01ad74;
+    opacity: .7;
+    background-color: #43494d;
+    transition: .3s all ease-in-out;
+}
+
+.mid-tweet-action:nth-child(3):hover{
+    color: #d4156e;
+    opacity: .7;
+    background-color: #43494d;
+    transition: .3s all ease-in-out;
+}
+
+.mid-tweet-action:nth-child(4):hover{
+    color: #1d99ed;
+    opacity: .7;
+    background-color: #43494d;
+    transition: .3s all ease-in-out;
+}
+
+.mid-tweet-action-info {
+    font-family: 'default';
+    margin-left: 10px;
+    font-weight: normal;
+}
